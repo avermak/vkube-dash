@@ -6,7 +6,7 @@ body {
   flex-direction: column;
 }
 .app-header {
-  background-color: #3a404b;
+  background-color: #000;
   color: #58fff9;
   padding: 6px;
   font-size: 16pt;
@@ -26,4 +26,17 @@ body {
 .data-table th {
   border-bottom: #2f2f2f 1px solid;
   padding: 5px;
+  text-align: left;
+  background-color: #414141;
+  color: #bbb;
 }
+.data-table tr[data-noderow="even"] {
+  background-color: #3336;
+}
+.data-table td {
+  padding: 20px;
+}
+.data-table td[data-pod-stale="true"] {
+  color: #666;
+}
+
